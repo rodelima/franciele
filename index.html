@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franciele Oliveira</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body class="container">
+<div class="main-content">
+    <header>
+        <h1 class="titulo-site">Franciele Oliveira</h1>
+        <h2 class="subtitulo-site">Arquiteta | Paisagista| Urbanista</h2>
+        <nav class="padding--small">
+          <a class="mobile-nav-icon js--nav-icon" onclick="myFunction(this)">
+            <div class="container-nav">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </a>
+            <ul class="menu-principal js--main-nav">
+                <li class="menu-principal--item active"><a href="index.html"  class="menu-principal--link">Página Inicial</a></li>
+                <li class="menu-principal--item"><a href="sobre.html"  class="menu-principal--link">Sobre</a></li>
+                <li class="menu-principal--item"><a href="servicos.html"  class="menu-principal--link">Serviços</a></li>
+                <li class="menu-principal--item"><a href="portfolio.html"  class="menu-principal--link">Portfólio</a></li>
+                <li class="menu-principal--item"><a href="contato.html"  class="menu-principal--link">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="padding--small">
+      <section>
+        <div>
+            <a href="portfolio.html"><ul class="rslides">
+                <li><img src="lib/images/paisagismo/1.jpg" alt="Imagem Destaque 1"/></li>
+                <li><img src="lib/images/paisagismo/2.jpg" alt="Imagem Destaque 2"/></li>
+                <li><img src="lib/images/projetos-de-interior/1.jpg" alt="Imagem Destaque 3"></li>
+                <li><img src="lib/images/projetos-de-interior/2.jpg" alt="Imagem Destaque 4"></li>
+                <li><img src="lib/images/residencial/1.jpg" alt="Imagem Destaque 5"></li>
+                <li><img src="lib/images/residencial/2.jpg" alt="Imagem Destaque 6"></li>
+            </ul></a>
+        </div>
+      </section>
+  </div>
+  </div>
+    <footer style="padding-top: 30px; padding-bottom: 30px; text-align: center">
+    <hr>
+      Desenvovido por: <a href="http://masterlima.com" target="_blank">MasterLima</a>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="lib/vendor/responsiveslides.min.js"></script>
+    <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    $('.js--nav-icon').click(function(){
+      var nav = $('.js--main-nav');
+      nav.toggleClass('show-menu');
+    });
+    $(function() {
+    $(".rslides").responsiveSlides({
+      speed: 1000
+    });
+  });
+    </script>
+</body>
+</html>
