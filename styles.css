@@ -193,6 +193,7 @@ font-family: 'Lato', sans-serif;
 .big-bold {
   font-size: 36px;
   font-weight: 900;
+  line-height: 1;
 }
 
 .contato-form, .contato-text {
